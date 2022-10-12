@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use GuzzleHttp\Client;
+use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Login\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+/**
+ *Trans:Home
+ * */
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+
