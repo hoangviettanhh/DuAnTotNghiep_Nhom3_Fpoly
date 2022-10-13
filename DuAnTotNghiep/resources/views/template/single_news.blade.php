@@ -1,3 +1,4 @@
+@extends('template.layout')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,29 +9,6 @@
 
     <!-- title -->
     <title>Single News</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!-- animate css -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- mean menu css -->
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-    <!-- main style -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- responsive -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
 </head>
 <body>
 
@@ -61,34 +39,34 @@
                         <ul>
                             <li class="current-list-item"><a href="#">Home</a>
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Static Home</a></li>
+                                    <li><a href="index.blade.php">Static Home</a></li>
                                     <li><a href="index_2.html">Slider Home</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.blade.php">About</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="sub-menu">
-                                    <li><a href="404.html">404 page</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="404.blade.php">404 page</a></li>
+                                    <li><a href="about.blade.php">About</a></li>
                                     <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="checkout.blade.php">Check Out</a></li>
+                                    <li><a href="contact.blade.php">Contact</a></li>
                                     <li><a href="news.html">News</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="shop.blade.php">Shop</a></li>
                                 </ul>
                             </li>
                             <li><a href="news.html">News</a>
                                 <ul class="sub-menu">
                                     <li><a href="news.html">News</a></li>
-                                    <li><a href="single-news.html">Single News</a></li>
+                                    <li><a href="single_news.blade.php">Single News</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="shop.html">Shop</a>
+                            <li><a href="contact.blade.php">Contact</a></li>
+                            <li><a href="shop.blade.php">Shop</a>
                                 <ul class="sub-menu">
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
+                                    <li><a href="shop.blade.php">Shop</a></li>
+                                    <li><a href="checkout.blade.php">Check Out</a></li>
+                                    <li><a href="single_product.blade.php">Single Product</a></li>
                                     <li><a href="cart.html">Cart</a></li>
                                 </ul>
                             </li>
@@ -199,7 +177,7 @@
                     <div class="comment-template">
                         <h4>Leave a comment</h4>
                         <p>If you have a comment dont feel hesitate to send us your opinion.</p>
-                        <form action="index.html">
+                        <form action="index.blade.php">
                             <p>
                                 <input type="text" placeholder="Your Name">
                                 <input type="email" placeholder="Your Email">
@@ -215,32 +193,32 @@
                     <div class="recent-posts">
                         <h4>Recent Posts</h4>
                         <ul>
-                            <li><a href="single-news.html">You will vainly look for fruit on it in autumn.</a></li>
-                            <li><a href="single-news.html">A man's worth has its season, like tomato.</a></li>
-                            <li><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></li>
-                            <li><a href="single-news.html">Fall in love with the fresh orange</a></li>
-                            <li><a href="single-news.html">Why the berries always look delecious</a></li>
+                            <li><a href="single_news.blade.php">You will vainly look for fruit on it in autumn.</a></li>
+                            <li><a href="single_news.blade.php">A man's worth has its season, like tomato.</a></li>
+                            <li><a href="single_news.blade.php">Good thoughts bear good fresh juicy fruit.</a></li>
+                            <li><a href="single_news.blade.php">Fall in love with the fresh orange</a></li>
+                            <li><a href="single_news.blade.php">Why the berries always look delecious</a></li>
                         </ul>
                     </div>
                     <div class="archive-posts">
                         <h4>Archive Posts</h4>
                         <ul>
-                            <li><a href="single-news.html">JAN 2019 (5)</a></li>
-                            <li><a href="single-news.html">FEB 2019 (3)</a></li>
-                            <li><a href="single-news.html">MAY 2019 (4)</a></li>
-                            <li><a href="single-news.html">SEP 2019 (4)</a></li>
-                            <li><a href="single-news.html">DEC 2019 (3)</a></li>
+                            <li><a href="single_news.blade.php">JAN 2019 (5)</a></li>
+                            <li><a href="single_news.blade.php">FEB 2019 (3)</a></li>
+                            <li><a href="single_news.blade.php">MAY 2019 (4)</a></li>
+                            <li><a href="single_news.blade.php">SEP 2019 (4)</a></li>
+                            <li><a href="single_news.blade.php">DEC 2019 (3)</a></li>
                         </ul>
                     </div>
                     <div class="tag-section">
                         <h4>Tags</h4>
                         <ul>
-                            <li><a href="single-news.html">Apple</a></li>
-                            <li><a href="single-news.html">Strawberry</a></li>
-                            <li><a href="single-news.html">BErry</a></li>
-                            <li><a href="single-news.html">Orange</a></li>
-                            <li><a href="single-news.html">Lemon</a></li>
-                            <li><a href="single-news.html">Banana</a></li>
+                            <li><a href="single_news.blade.php">Apple</a></li>
+                            <li><a href="single_news.blade.php">Strawberry</a></li>
+                            <li><a href="single_news.blade.php">BErry</a></li>
+                            <li><a href="single_news.blade.php">Orange</a></li>
+                            <li><a href="single_news.blade.php">Lemon</a></li>
+                            <li><a href="single_news.blade.php">Banana</a></li>
                         </ul>
                     </div>
                 </div>
