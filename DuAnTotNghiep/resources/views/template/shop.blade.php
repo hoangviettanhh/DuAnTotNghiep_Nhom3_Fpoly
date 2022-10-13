@@ -1,36 +1,11 @@
-<!DOCTYPE html>
+@extends('template.layout')
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
-
-    <!-- title -->
-    <title>Shop</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!-- animate css -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- mean menu css -->
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-    <!-- main style -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- responsive -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
 </head>
 <body>
 
@@ -50,7 +25,7 @@
                 <div class="main-menu-wrap">
                     <!-- logo -->
                     <div class="site-logo">
-                        <a href="index.html">
+                        <a href="index.blade.php">
                             <img src="assets/img/logo.png" alt="">
                         </a>
                     </div>
@@ -61,34 +36,34 @@
                         <ul>
                             <li class="current-list-item"><a href="#">Home</a>
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Static Home</a></li>
+                                    <li><a href="index.blade.php">Static Home</a></li>
                                     <li><a href="index_2.html">Slider Home</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.blade.php">About</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="sub-menu">
-                                    <li><a href="404.html">404 page</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="404.blade.php">404 page</a></li>
+                                    <li><a href="about.blade.php">About</a></li>
                                     <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="checkout.blade.php">Check Out</a></li>
+                                    <li><a href="contact.blade.php">Contact</a></li>
+                                    <li><a href="single_news.blade.php">News</a></li>
+                                    <li><a href="shop.blade.php">Shop</a></li>
                                 </ul>
                             </li>
                             <li><a href="news.html">News</a>
                                 <ul class="sub-menu">
                                     <li><a href="news.html">News</a></li>
-                                    <li><a href="single-news.html">Single News</a></li>
+                                    <li><a href="single_news.blade.php">Single News</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="shop.html">Shop</a>
+                            <li><a href="contact.blade.php">Contact</a></li>
+                            <li><a href="shop.blade.php">Shop</a>
                                 <ul class="sub-menu">
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
+                                    <li><a href="shop.blade.php">Shop</a></li>
+                                    <li><a href="checkout.blade.php">Check Out</a></li>
+                                    <li><a href="single_product.blade.php">Single Product</a></li>
                                     <li><a href="cart.html">Cart</a></li>
                                 </ul>
                             </li>
@@ -165,7 +140,7 @@
             <div class="col-lg-4 col-md-6 text-center strawberry">
                 <div class="single-product-item">
                     <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
+                        <a href="single_product.blade.php"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
                     </div>
                     <h3>Strawberry</h3>
                     <p class="product-price"><span>Per Kg</span> 85$ </p>
@@ -175,7 +150,7 @@
             <div class="col-lg-4 col-md-6 text-center berry">
                 <div class="single-product-item">
                     <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
+                        <a href="single_product.blade.php"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
                     </div>
                     <h3>Berry</h3>
                     <p class="product-price"><span>Per Kg</span> 70$ </p>
@@ -185,7 +160,7 @@
             <div class="col-lg-4 col-md-6 text-center lemon">
                 <div class="single-product-item">
                     <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
+                        <a href="single_product.blade.php"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
                     </div>
                     <h3>Lemon</h3>
                     <p class="product-price"><span>Per Kg</span> 35$ </p>
@@ -195,7 +170,7 @@
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="single-product-item">
                     <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-4.jpg" alt=""></a>
+                        <a href="single_product.blade.php"><img src="assets/img/products/product-img-4.jpg" alt=""></a>
                     </div>
                     <h3>Avocado</h3>
                     <p class="product-price"><span>Per Kg</span> 50$ </p>
@@ -205,7 +180,7 @@
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="single-product-item">
                     <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+                        <a href="single_product.blade.php"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
                     </div>
                     <h3>Green Apple</h3>
                     <p class="product-price"><span>Per Kg</span> 45$ </p>
@@ -215,7 +190,7 @@
             <div class="col-lg-4 col-md-6 text-center strawberry">
                 <div class="single-product-item">
                     <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-6.jpg" alt=""></a>
+                        <a href="single_product.blade.php"><img src="assets/img/products/product-img-6.jpg" alt=""></a>
                     </div>
                     <h3>Strawberry</h3>
                     <p class="product-price"><span>Per Kg</span> 80$ </p>
@@ -305,7 +280,7 @@
                 <div class="footer-box subscribe">
                     <h2 class="widget-title">Subscribe</h2>
                     <p>Subscribe to our mailing list to get the latest updates.</p>
-                    <form action="index.html">
+                    <form action="index.blade.php">
                         <input type="email" placeholder="Email">
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
                     </form>
@@ -339,28 +314,6 @@
         </div>
     </div>
 </div>
-<!-- end copyright -->
-
-<!-- jquery -->
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<!-- bootstrap -->
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<!-- count down -->
-<script src="assets/js/jquery.countdown.js"></script>
-<!-- isotope -->
-<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
-<!-- waypoints -->
-<script src="assets/js/waypoints.js"></script>
-<!-- owl carousel -->
-<script src="assets/js/owl.carousel.min.js"></script>
-<!-- magnific popup -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<!-- mean menu -->
-<script src="assets/js/jquery.meanmenu.min.js"></script>
-<!-- sticker js -->
-<script src="assets/js/sticker.js"></script>
-<!-- main js -->
-<script src="assets/js/main.js"></script>
 
 </body>
 </html>
