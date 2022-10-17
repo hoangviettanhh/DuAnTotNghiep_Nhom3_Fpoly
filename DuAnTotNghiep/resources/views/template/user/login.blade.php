@@ -58,3 +58,4 @@
 </div>
 </body>
 </html>
+<script src="{{asset('js/login/login.js')}} "></script>
